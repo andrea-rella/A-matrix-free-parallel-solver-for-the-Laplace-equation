@@ -1,0 +1,34 @@
+Scalability Test Results
+========================
+-------------------------------------
+Running with: 1 processors
+Time elapsed during solve of 16 x 16 grid: 0.01583 seconds. L2 Error registered: 0.0285638
+Time elapsed during solve of 32 x 32 grid: 0.0356459 seconds. L2 Error registered: 0.00954511
+Time elapsed during solve of 64 x 64 grid: 0.559647 seconds. L2 Error registered: 0.00327121
+Time elapsed during solve of 128 x 128 grid: 8.22255 seconds. L2 Error registered: 0.00105711
+Time elapsed during solve of 256 x 256 grid: 32.8463 seconds. L2 Error registered: 0.519136
+
+-------------------------------------
+Running with: 2 processors
+Time elapsed during solve of 16 x 16 grid: 0.00137296 seconds. L2 Error registered: 0.0285634
+Time elapsed during solve of 32 x 32 grid: 0.0180276 seconds. L2 Error registered: 0.00954327
+Time elapsed during solve of 64 x 64 grid: 0.289799 seconds. L2 Error registered: 0.00326289
+Time elapsed during solve of 128 x 128 grid: 4.39727 seconds. L2 Error registered: 0.00103406
+Time elapsed during solve of 256 x 256 grid: 18.423 seconds. L2 Error registered: 0.519135
+
+-------------------------------------
+Running with: 4 processors
+Time elapsed during solve of 16 x 16 grid: 0.0868551 seconds. L2 Error registered: 0.0285626
+Time elapsed during solve of 32 x 32 grid: 0.0403271 seconds. L2 Error registered: 0.00954015
+Time elapsed during solve of 64 x 64 grid: 0.323765 seconds. L2 Error registered: 0.0032506
+Time elapsed during solve of 128 x 128 grid: 3.04268 seconds. L2 Error registered: 0.000985011
+Time elapsed during solve of 256 x 256 grid: 12.6278 seconds. L2 Error registered: 0.530328
+
+-------------------------------------
+Running with: 8 processors
+Time elapsed during solve of 16 x 16 grid: 0.182007 seconds. L2 Error registered: 0.0285621
+Time elapsed during solve of 32 x 32 grid: 0.260499 seconds. L2 Error registered: 0.00953841
+Time elapsed during solve of 64 x 64 grid: 0.458575 seconds. L2 Error registered: 0.00324486
+Time elapsed during solve of 128 x 128 grid: 4.46869 seconds. L2 Error registered: 0.00096483
+Time elapsed during solve of 256 x 256 grid: 16.8114 seconds. L2 Error registered: 0.541482
+

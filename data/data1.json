@@ -1,0 +1,11 @@
+{
+  "axislim": [0, 1],
+  "n_c": 63,
+
+  "uex": "sin(2*_pi*x1) * sin(2*_pi*x2)",
+  "f": "8 * _pi^2 * sin(2*_pi*x1) * sin(2*_pi*x2)",
+  "g": "0",
+
+  "tol": 1e-7,
+  "max_it": 9000
+}
