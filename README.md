@@ -4,8 +4,8 @@ A parallel solver employing both MPI and OpenMP for the laplace equation
 
 $$
 \begin{cases}
-& - \Delta u = f & \text{in} \, \Omega \\
-& u = g & \text{on} \, \partial \Omega
+& - \Delta u = f & \text{in} \ \Omega \\
+& u = g & \text{on} \ \partial \Omega
 \end{cases}
 $$
 
