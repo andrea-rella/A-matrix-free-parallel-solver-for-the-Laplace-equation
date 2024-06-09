@@ -113,7 +113,6 @@ int main(int argc, char **argv)
 
     solver.solve();
 
-    // Print the elapsed time
     if (rank == 0)
     {
         std::cout << "The Laplace problem has been solved! The L2 error is: " << solver.L2error() << std::endl;
