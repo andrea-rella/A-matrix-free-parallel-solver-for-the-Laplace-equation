@@ -89,7 +89,7 @@ You can export your result in a .vtk for ParaView visulization using the method 
 
 ## Example
 
-Here is a simple example of how to setup the code if you whish to change the workflow:
+Here is a simple example of how to setup the code if you wish to change the workflow:
 
 ```cpp
 
@@ -110,27 +110,22 @@ int main(int argc, char **argv)
 
     solver.initializeGrid();
     solver.initializeSol();
-    // Get the start time
-    double start = MPI_Wtime();
-    // Solve the problem
+
     solver.solve();
-
-    // Get the end time
-    double end = MPI_Wtime();
-
-    // Compute the elapsed time
-    double elapsed = end - start;
 
     // Print the elapsed time
     if (rank == 0)
     {
-        std::cout << "Time elapsed during solve: " << elapsed << " seconds" << std::endl;
         std::cout << "The Laplace problem has been solved! The L2 error is: " << solver.L2error() << std::endl;
 
         std::string filenameWithoutExtension = filename.substr(0, filename.find_last_of("."));
 
         solver.exportSol("./data/" + filenameWithoutExtension + ".vtk");
     }
+
+    MPI_Finalize();
+
+    return 0;
 
 }
 ```
