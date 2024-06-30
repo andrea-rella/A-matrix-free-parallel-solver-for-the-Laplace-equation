@@ -1,4 +1,4 @@
-LIBS_ROOT = ../../pacs-examples/Examples
+LIBS_ROOT = $(PACS_ROOT)
 
 CXX = mpicxx
 CXXFLAGS = -fopenmp -O3 -std=c++20
