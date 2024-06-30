@@ -45,6 +45,9 @@ namespace laplace
          *           index and j is the column index. The last row corresponds to y = axislim[0] and the last
          *           column to x = axislim[1]
          */
+        //@note it is better to use a linear structure for a matrix. For instance using an eigen matrix
+        // A vector is a linear structure, but a vector of vector is not. In fact, each "row" of the vector of vector
+        // is a different vector, so the memory is not contiguous. This is not the case for a vector of size nx * ny
         std::vector<std::vector<std::array<T, 2>>> mesh;
         std::vector<T> U;
 

@@ -20,6 +20,8 @@ namespace laplace
     LaplaceSolver<T>::LaplaceSolver(std::string &filename)
     {
         // Parameters will be read from a .json file
+        //@note follow the one responsbility rule. It should not be responsibility of the solver
+        // to read the parameters from a file. This should be done by another class or function
         std::ifstream file("./data/" + filename);
         json data = json::parse(file);
 
@@ -66,7 +68,7 @@ namespace laplace
     {
 #pragma omp parallel
         {
-            auto g_private = g; // This way, each thread has its own copy of g, avoiding concurrent access to shared state.
+            auto g_private = g; // This way, each thread has its own copy of g, avoiding concurrent access to shared state. @note good practice
 #pragma omp for
             for (std::size_t i = 0; i <= n_c; i++)
             {

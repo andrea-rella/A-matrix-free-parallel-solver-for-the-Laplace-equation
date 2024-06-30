@@ -1,0 +1,8 @@
+Nice work. Your comments on the scalability are correct. For this type
+of problems strong scalability cannot be reached becouse as the number
+of processes grows the work done by each processor decreases but
+communications do not scale accordingly.
+
+Weak scalability is not reached becouse the number of iterations depend on the condition number that scales as h^-2, being h the element size, so it scales approximately as N, being N the number of unknwowns of the problem.
+
+To have weak scalability we need to have a number of iteration constrant with h, and this can be obteined only with a good preconditioner, which, however, must itself be parallel!
